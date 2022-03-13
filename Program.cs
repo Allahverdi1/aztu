@@ -1,86 +1,86 @@
 ﻿using System;
- 
-namespace ConsoleApp1
+
+namespace Task2
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Product product1 = new Product
+            string lengthStr;
+            int length;
+            do
             {
-                Name = "Jaket ",
-                BrandName = "Lc Waikiki",
-                Price = 40
-            };
- 
-            Console.WriteLine($"{product1.Name} {product1.BrandName}  {product1.Price}");
- 
-            Product product2 = new Product
+                Console.WriteLine("Zehmet olmasa Book sayini daxil edin:");
+                lengthStr = Console.ReadLine();
+                length = Convert.ToInt32(lengthStr);
+
+            } while (length < 0);
+            Book[] books = new Book[length];
+            for (int i = 0; i < length; i++)
             {
-                Name = "Koynek",
-                BrandName = "Zara",
-                Price = 35
-            };
- 
-            Console.WriteLine($"{product2.Name} {product2.BrandName}  {product2.Price}");
- 
-            Product product3 = new Product
-            {
-                Name = "Ayaqqabi",
-                BrandName = "Flo",
-                Price = 70
-            };
- 
-            Console.WriteLine($"{product3.Name} {product3.BrandName}  {product3.Price}");
- 
-            Product product4 = new Product
-            {
-            Name = "Salvar",
-            BrandName = "Pull Bear",
-            Price = 55
-            };
- 
-            Console.WriteLine($"{product4.Name} {product4.BrandName}  {product4.Price}");
- 
- 
-            Product product5 = new Product();
- 
-            product5.Name = "Salvar";
-            product5.BrandName= "Vasmoy Bazari";
-            product5.Price = 15;
-            Console.WriteLine($"{product5.Name} {product5.BrandName}  {product5.Price}");
- 
-           
+                string countStr;
+                int count;
+
+                do
+                {
+                    Console.WriteLine($"{ i + 1}.Book-un zehmet olmasa sayini daxil edin");
+                    countStr = Console.ReadLine();
+                    count = Convert.ToInt32(countStr);
+
+                } while (count < 0);
+
+                string priceStr;
+                double price;
+
+                do
+                {
+                    Console.WriteLine($"{ i + 1}.Book-un zehmet olmasa qiymetini daxil edin");
+                    priceStr = Console.ReadLine();
+                    price = Convert.ToDouble(priceStr);
+                }
+                while (price < 0);
+
+                string Name;
+
+                do
+                {
+                    Console.WriteLine($"{ i + 1}.Book-un zehmet olmasa Adini daxil edin");
+                    Name = Console.ReadLine();
+
+                } while (Name.Length < 0);
+
+                string Genre;
+
+                do
+                {
+                    Console.WriteLine($"{ i + 1}.Book-un zehmet olmasa Janrini daxil edin");
+                    Genre = Console.ReadLine();
+
+                } while (Genre.Length < 0);
+
+                string noStr;
+                int no;
+
+                do
+                {
+                    Console.WriteLine($"{ i + 1}.Book-un zehmet olmasa Nomresini daxil edin");
+                    noStr = Console.ReadLine();
+                    no = Convert.ToInt32(noStr);
+
+                } while (no < 0);
+
+
+
+
+
+
+
+
+
+
+                }
         }
- 
- 
- 
- 
     }
-    class Product
-    {
-        public string Name;
-        public string BrandName;
-        public int Price;
-    }
-}
 
-
-
-
-        
-
-
-
-
-
-  
-
-
-         
     
-
-
-
-
 
