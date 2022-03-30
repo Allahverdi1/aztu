@@ -2,67 +2,44 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Task5
+namespace ConsoleApp4
 {
+    enum GroupType
+    { 
+        Programming,
+        Desing,
+        System
+    }
+
     internal class Group
     {
-        private string _no;
-        private int _studentLimit;
+        static int _no;
+        public int No { get; }
+        public Student[] _student;
+        private Student[] _students;
+        public GroupType type { get; set; }
+         
+        
 
-        public int StudentLimit
+        
+
+        public Group()
         {
-            get => this._studentLimit;
-            set
+            this._students = new Student[0];
+        }
+        public Student[] Students { get => _students; }
+        public void AddStudent(Student student)
+        {
+            if (type is Student)
             {
-                if (value > 0)
-                    this._studentLimit = value;
+                Array.Resize(ref this._students, this._students.Length + 1);
+                this._students[this._students.Length - 1] = student;
             }
         }
-        public string No
-        {
-            get => this._no;
-            set
-            {
-                if (CheckNo(value))
-                    this._no = value;
-            }
-        }
-        public bool HasDigit(string str)
-        {
-            if (!string.IsNullOrWhiteSpace(str))
-            {
-                for (int i = 2; i < str.Length; i++)
-                {
-                    if (char.IsDigit(str[i]))
-                        return true;
-                }
-            }
 
-            return false;
-        }
-        public bool HasUpper(string str)
+        public static implicit operator Group(Student v)
         {
-            if (!string.IsNullOrWhiteSpace(str))
-            {
-                for (int i = 1; i < str.Length; i++)
-                {
-                    if (char.IsUpper(str[i]))
-                        return true;
-                }
-            }
-
-            return false;
+            throw new NotImplementedException();
         }
     }
 }
-
-
-
-
-
-
-        
-        
-
-        
-    
