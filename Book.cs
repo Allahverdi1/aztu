@@ -2,17 +2,21 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Task2
+namespace ConsoleApp5
 {
-    internal class Book:Product
+    internal class Book
     {
-        public Book(int No, string Name, double Price, string Genre) : base(No, Name, Price)
+        public string Name { get; set; }
+        public string AuthorName { get; set; }
+        public int PageCount { get; set; }
+        static int _no;
+        public int No { get; }
+
+        public Book()
         {
-            this.Genre = Genre;
+            _no++;
+            No = _no;
+
         }
-        public string Genre;
     }
 }
-
-    
-
