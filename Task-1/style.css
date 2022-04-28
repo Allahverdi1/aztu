@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    top: 0;
+    box-sizing: border-box;
+}
+.nowbar{
+    width: 80%;
+    height: 20px;
+    display: flex;
+    padding: 70px 350px
+ 
+}
+.nowbar .logo img{
+    margin: 0;
+    top: 0;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
