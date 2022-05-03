@@ -1,0 +1,126 @@
+#intro {
+  padding: 50px 5px;
+  background-color: #f9f9f9;
+}
+
+#navbarNav ul li {
+  color: black;
+}
+
+.menu {
+  margin-top: 20px;
+}
+
+.menu h4 a {
+  text-decoration: none;
+}
+
+.lorem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.lorem h4 a {
+  padding: 20px;
+}
+
+.lorem-description {
+  padding: 35px;
+  margin-top: -20px;
+}
+
+.nemo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nemo h4 a {
+  padding: 20px;
+}
+
+.nemo-description {
+  padding: 35px;
+  margin-top: -20px;
+}
+
+.dine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dine h4 a {
+  padding: 20px;
+}
+
+.dine-description {
+  padding: 35px;
+  margin-top: -20px;
+}
+
+.title h2 {
+  text-align: center;
+}
+
+.description p {
+  text-align: center;
+}
+
+#intro3 {
+  padding: 50px 5px;
+  background-color: #ecf4f7;
+}
+
+.col-3 {
+  float: left;
+}
+
+.col-3 h1 {
+  text-align: center;
+  color: #49b5e7;
+}
+
+.col-3 h4 {
+  text-align: center;
+}
+
+.title h2 {
+  color: #0f394c;
+}
+
+#intro4 {
+  margin-top: 50px;
+}
+
+#intro4 .col-3 {
+  border: 1px solid grey;
+}
+
+#intro5 .col-4 {
+  float: left;
+}
+
+#intro5 {
+  margin-top: 50px;
+  padding: 50px 5px;
+  background-color: #f9f9f9;
+}
+
+#intro5 .col-4 {
+  border: 1px solid grey;
+}
+
+#intro5 h1 {
+  text-align: center;
+}
+
+#intro5 p {
+  text-align: center;
+}
+
+#intro5 .col-4 {
+  margin-top: 30px;
+}
+/*# sourceMappingURL=style.css.map */
